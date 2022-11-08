@@ -10,6 +10,8 @@ return [
     'id_generator' => Stancl\Tenancy\UUIDGenerator::class,
 
     'domain_model' => Domain::class,
+    'auto-delete-tenant-directory' => env('AUTO_DELETE_TENANT_DIRECTORY', false),
+    'auto-delete-tenant-database' => env('AUTO_DELETE_TENANT_DATABASE', false),
 
     /**
      * The list of domains hosting your central app.
